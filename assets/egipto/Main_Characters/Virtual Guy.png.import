@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2u8xpv5rrhft"
-path="res://.godot/imported/icon.jpg-4a7f64b346e42b67f360ae423f9eb5cc.ctex"
+uid="uid://b0fkypq6l6nb1"
+path="res://.godot/imported/Virtual Guy.png-5591452cbf3be297603d27d6fa3eb1bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.jpg"
-dest_files=["res://.godot/imported/icon.jpg-4a7f64b346e42b67f360ae423f9eb5cc.ctex"]
+source_file="res://assets/egipto/Main_Characters/Virtual Guy.png"
+dest_files=["res://.godot/imported/Virtual Guy.png-5591452cbf3be297603d27d6fa3eb1bd.ctex"]
 
 [params]
 

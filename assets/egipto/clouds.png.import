@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2jwv8tob1pmw"
-path="res://.godot/imported/Virtual.png-6062033572e4de820291c25047c27f62.ctex"
+uid="uid://mrjum5cyfcfr"
+path="res://.godot/imported/clouds.png-b38ddd5f5da56c38bd53c638dfcc9244.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/egipto/Main_Characters/Virtual.png"
-dest_files=["res://.godot/imported/Virtual.png-6062033572e4de820291c25047c27f62.ctex"]
+source_file="res://assets/egipto/clouds.png"
+dest_files=["res://.godot/imported/clouds.png-b38ddd5f5da56c38bd53c638dfcc9244.ctex"]
 
 [params]
 

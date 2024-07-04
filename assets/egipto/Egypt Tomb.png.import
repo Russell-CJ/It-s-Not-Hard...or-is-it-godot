@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duh5mcffev6am"
-path="res://.godot/imported/Egypt Tomb.png-d95560798cbe34857968f1b6179b251f.ctex"
+uid="uid://cfgqgvb4g1cfj"
+path="res://.godot/imported/Egypt Tomb.png-a4cf65ab529a4666cf3ea6ca38bba750.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/egipto/terrian/Egypt Tomb.png"
-dest_files=["res://.godot/imported/Egypt Tomb.png-d95560798cbe34857968f1b6179b251f.ctex"]
+source_file="res://assets/egipto/Egypt Tomb.png"
+dest_files=["res://.godot/imported/Egypt Tomb.png-a4cf65ab529a4666cf3ea6ca38bba750.ctex"]
 
 [params]
 

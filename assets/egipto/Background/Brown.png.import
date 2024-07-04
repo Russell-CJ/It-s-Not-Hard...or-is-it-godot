@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cos4wfsgtg3ka"
-path="res://.godot/imported/arabtown-tile.png-1e685bfee996cc6d312287dde4ac87bd.ctex"
+uid="uid://cdrm8dumoyink"
+path="res://.godot/imported/Brown.png-be2b098961cfdf83f73af804db3651b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/egipto/terrian/arabtown-tile.png"
-dest_files=["res://.godot/imported/arabtown-tile.png-1e685bfee996cc6d312287dde4ac87bd.ctex"]
+source_file="res://assets/egipto/Background/Brown.png"
+dest_files=["res://.godot/imported/Brown.png-be2b098961cfdf83f73af804db3651b2.ctex"]
 
 [params]
 

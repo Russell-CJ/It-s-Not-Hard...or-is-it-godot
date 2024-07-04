@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://bx4yoo5v2hcyt"]
+
+[ext_resource type="Script" path="res://scenes/game/troll/turn_off.gd" id="1_bpks8"]
+[ext_resource type="Texture2D" uid="uid://cfgqgvb4g1cfj" path="res://assets/egipto/Egypt Tomb.png" id="2_2p6xo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l24mv"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atcxk"]
+size = Vector2(14, 0.5)
+
+[node name="turn_0ff" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-25, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(15, 0)
+shape = SubResource("RectangleShape2D_l24mv")
+
+[node name="Area2D" type="Area2D" parent="StaticBody2D"]
+position = Vector2(5, 0)
+script = ExtResource("1_bpks8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Area2D"]
+position = Vector2(10, -9)
+shape = SubResource("RectangleShape2D_atcxk")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(15, 0)
+texture = ExtResource("2_2p6xo")
+region_enabled = true
+region_rect = Rect2(32, 64, 16, 16)
+
+[connection signal="body_entered" from="StaticBody2D/Area2D" to="StaticBody2D/Area2D" method="_on_body_entered"]
