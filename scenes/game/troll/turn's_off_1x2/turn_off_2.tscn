@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dykjw55gjlstp"]
 
-[ext_resource type="Script" path="res://scenes/game/troll/turn's_off_2/turn_off_2.gd" id="1_eey1p"]
+[ext_resource type="Script" path="res://scenes/game/troll/turn's_off_1x2/turn_off_2.gd" id="1_eey1p"]
 [ext_resource type="Texture2D" uid="uid://cfgqgvb4g1cfj" path="res://assets/egipto/Egypt Tomb.png" id="2_uvln8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bk0i7"]

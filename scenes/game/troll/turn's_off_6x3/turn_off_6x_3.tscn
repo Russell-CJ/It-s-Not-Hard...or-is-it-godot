@@ -1,0 +1,92 @@
+[gd_scene load_steps=7 format=3 uid="uid://ds1v4ebmb7ssd"]
+
+[ext_resource type="Texture2D" uid="uid://cfgqgvb4g1cfj" path="res://assets/egipto/Egypt Tomb.png" id="1_7rvvx"]
+[ext_resource type="Script" path="res://scenes/game/troll/turn's_off_6x3/turn_off_6x3.gd" id="1_fxtet"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a8n1t"]
+size = Vector2(96, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i172x"]
+size = Vector2(94, 1)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ni40y"]
+texture = ExtResource("1_7rvvx")
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_kgi0i"]
+sources/0 = SubResource("TileSetAtlasSource_ni40y")
+
+[node name="turn_off_6x3" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(48, 24)
+shape = SubResource("RectangleShape2D_a8n1t")
+
+[node name="Area2D" type="Area2D" parent="StaticBody2D"]
+script = ExtResource("1_fxtet")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Area2D"]
+position = Vector2(48, -1.5)
+shape = SubResource("RectangleShape2D_i172x")
+
+[node name="TileMap" type="TileMap" parent="StaticBody2D"]
+tile_set = SubResource("TileSet_kgi0i")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 65536, 4, 1, 131072, 4, 2, 65536, 4, 3, 131072, 4, 65538, 65536, 4, 65539, 131072, 4, 4, 65536, 4, 5, 131072, 4, 65540, 65536, 4, 65541, 131072, 4, 65536, 65536, 4, 65537, 131072, 4, 131072, 65536, 4, 131073, 131072, 4, 131074, 65536, 4, 131075, 131072, 4, 131076, 65536, 4, 131077, 131072, 4)
+
+[connection signal="body_entered" from="StaticBody2D/Area2D" to="StaticBody2D/Area2D" method="_on_body_entered"]

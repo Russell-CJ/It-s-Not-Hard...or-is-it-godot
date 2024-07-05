@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ntwsommhbi2p"]
+
+[ext_resource type="Script" path="res://scenes/game/troll/dead_floors/dead_floor.gd" id="1_iofsg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i3fyl"]
+size = Vector2(986, 20)
+
+[node name="dead_floor" type="Node2D"]
+script = ExtResource("1_iofsg")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(483, 0)
+shape = SubResource("RectangleShape2D_i3fyl")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

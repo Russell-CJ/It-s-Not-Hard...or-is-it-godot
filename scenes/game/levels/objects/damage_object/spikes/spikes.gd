@@ -14,7 +14,7 @@ func _on_area_body_entered(body):
 	if body.is_in_group("player"):
 		_player_script = body.get_node("MainCharacterMovement")
 		# "Golpeamos" al personaje
-		_player_script.hit(100)
+		_player_script.hit(5)
 		# Iniciamos el temporizador
 		_timer.start()
 
@@ -34,6 +34,6 @@ func _on_timer_timeout():
 	if HealthDashboard.life <= 0:
 		return
 	# Cuando termina el temporizador, hacemos daño al jugador
-	_player_script.hit(100)
+	_player_script.hit(5)
 	# Luego procedemos a inicializar de nuevo el temporizador
 	_timer.start()
