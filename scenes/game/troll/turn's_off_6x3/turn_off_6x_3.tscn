@@ -81,7 +81,7 @@ shape = SubResource("RectangleShape2D_a8n1t")
 script = ExtResource("1_fxtet")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Area2D"]
-position = Vector2(48, -1.5)
+position = Vector2(48, -21)
 shape = SubResource("RectangleShape2D_i172x")
 
 [node name="TileMap" type="TileMap" parent="StaticBody2D"]
