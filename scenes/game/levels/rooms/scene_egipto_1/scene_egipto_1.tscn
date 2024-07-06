@@ -1,5 +1,6 @@
-[gd_scene load_steps=23 format=3 uid="uid://hdqukhy1pi5l"]
+[gd_scene load_steps=24 format=3 uid="uid://hdqukhy1pi5l"]
 
+[ext_resource type="AudioStream" uid="uid://btstmivulu2by" path="res://assets/sounds/pirate_game_tune.ogg" id="1_7mykx"]
 [ext_resource type="Texture2D" uid="uid://gql4hhbpeg0s" path="res://assets/egipto/Background/Background.png" id="1_8ly82"]
 [ext_resource type="PackedScene" uid="uid://8rbt5lmdrp0s" path="res://scenes/game/camera/camera.tscn" id="1_n4fse"]
 [ext_resource type="Texture2D" uid="uid://cygbrcl7n7ox3" path="res://assets/egipto/Background/papyrus_texture.png" id="1_qs2l5"]
@@ -751,15 +752,19 @@ sources/1 = SubResource("TileSetAtlasSource_wg48n")
 [node name="Main" type="Node2D"]
 position = Vector2(-1630, 673)
 
+[node name="AmbientSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_7mykx")
+autoplay = true
+bus = &"Ambient"
+
 [node name="PapyrusTexture" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(2029.89, -273)
 scale = Vector2(0.434259, 0.437037)
 texture = ExtResource("1_qs2l5")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(2098, -336)
-scale = Vector2(0.593027, 0.593027)
+position = Vector2(2099, -350.559)
+scale = Vector2(0.590958, 0.58622)
 texture = ExtResource("1_8ly82")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -786,7 +791,7 @@ tile_set = SubResource("TileSet_fi7il")
 format = 2
 
 [node name="MainCharacter" parent="." instance=ExtResource("3_8rnhy")]
-position = Vector2(1666, -107)
+position = Vector2(1666, -111)
 
 [node name="Camera2D" parent="MainCharacter" instance=ExtResource("1_n4fse")]
 position = Vector2(74, -157)
