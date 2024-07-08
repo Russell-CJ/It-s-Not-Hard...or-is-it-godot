@@ -14,8 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://ntwsommhbi2p" path="res://scenes/game/troll/dead_floors/dead_floor.tscn" id="9_sfes5"]
 [ext_resource type="PackedScene" uid="uid://ds1v4ebmb7ssd" path="res://scenes/game/troll/turn's_off_6x3/turn_off_6x_3.tscn" id="10_fsv2w"]
 [ext_resource type="PackedScene" uid="uid://drxtgi2l6apbs" path="res://scenes/game/troll/turn's_off_1x2/off_raised_block_1x2.tscn" id="11_jd7df"]
-[ext_resource type="PackedScene" uid="uid://dl8afnvp5w315" path="res://scenes/game/levels/objects/power_up/power_up.tscn" id="12_pmvfk"]
 [ext_resource type="PackedScene" uid="uid://brhmupxo2xjim" path="res://scenes/game/levels/objects/change_scene/door_change_scene.tscn" id="13_gqrsf"]
+[ext_resource type="PackedScene" uid="uid://b5qjvfbte4svk" path="res://scenes/game/levels/objects/pickable_object/pickable_object.tscn" id="16_sylix"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h4bl7"]
 texture = ExtResource("2_wpieg")
@@ -829,5 +829,43 @@ position = Vector2(1559, -36)
 [node name="off_raised_block_1x2" parent="." instance=ExtResource("11_jd7df")]
 position = Vector2(2208, -319)
 
-[node name="PowerUp" parent="." instance=ExtResource("12_pmvfk")]
-position = Vector2(2424, -106)
+[node name="object" type="Node" parent="."]
+
+[node name="PickableObject" parent="object" instance=ExtResource("16_sylix")]
+position = Vector2(787, 569)
+
+[node name="PickableObject2" parent="object" instance=ExtResource("16_sylix")]
+position = Vector2(101, 563)
+
+[node name="PickableObject3" parent="object" instance=ExtResource("16_sylix")]
+position = Vector2(211, 559)
+
+[node name="PickableObject4" parent="object" instance=ExtResource("16_sylix")]
+position = Vector2(481, 508)
+
+[node name="PickableObject5" parent="object" instance=ExtResource("16_sylix")]
+position = Vector2(383, 542)
+
+[node name="PickableObject6" parent="object" instance=ExtResource("16_sylix")]
+position = Vector2(593, 472)
+
+[node name="PickableObject7" parent="object" instance=ExtResource("16_sylix")]
+position = Vector2(616, 324)
+
+[node name="PickableObject8" parent="object" instance=ExtResource("16_sylix")]
+position = Vector2(536, 261)
+
+[node name="PickableObject9" parent="object" instance=ExtResource("16_sylix")]
+position = Vector2(499, 261)
+
+[node name="PickableObject10" parent="object" instance=ExtResource("16_sylix")]
+position = Vector2(463, 261)
+
+[node name="PickableObject11" parent="object" instance=ExtResource("16_sylix")]
+position = Vector2(267, 229)
+
+[node name="PickableObject12" parent="object" instance=ExtResource("16_sylix")]
+position = Vector2(290, 229)
+
+[node name="PickableObject13" parent="object" instance=ExtResource("16_sylix")]
+position = Vector2(312, 229)
