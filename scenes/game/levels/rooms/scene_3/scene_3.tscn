@@ -1,11 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://b1d750o6hts76"]
+[gd_scene load_steps=6 format=3 uid="uid://b1d750o6hts76"]
 
+[ext_resource type="AudioStream" uid="uid://btstmivulu2by" path="res://assets/sounds/pirate_game_tune.ogg" id="1_jyhb3"]
 [ext_resource type="TileSet" uid="uid://bx1rsqucrwm2i" path="res://assets/resources/bg_tile_set.tres" id="1_mv2rp"]
 [ext_resource type="PackedScene" uid="uid://ca3ueo0yewjov" path="res://scenes/game/characters/main_character/main_character.tscn" id="2_e4qjl"]
 [ext_resource type="PackedScene" uid="uid://8rbt5lmdrp0s" path="res://scenes/game/camera/camera.tscn" id="3_nj4wd"]
 [ext_resource type="FontFile" uid="uid://dregmkvncw55k" path="res://assets/fonts/press_Sstart_2p/PressStart2P-Regular.ttf" id="4_kko1q"]
 
 [node name="Main" type="Node2D"]
+
+[node name="AmbientSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_jyhb3")
+autoplay = true
+bus = &"Ambient"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("1_mv2rp")

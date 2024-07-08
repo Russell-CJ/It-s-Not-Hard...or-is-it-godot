@@ -772,6 +772,11 @@ position = Vector2(1738, -433)
 region_enabled = true
 region_rect = Rect2(0, 0, 1024, 512)
 
+[node name="DoorChangeScene2" parent="." instance=ExtResource("13_gqrsf")]
+z_index = -1
+position = Vector2(1855, -494)
+_path_to_scene = "res://scenes/game/levels/rooms/scene_3/scene_3.tscn"
+
 [node name="DoorChangeScene" parent="." instance=ExtResource("13_gqrsf")]
 position = Vector2(1855, -481)
 
